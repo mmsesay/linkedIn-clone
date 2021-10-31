@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
   <title>Feed | LinkedIn</title>
 </head>
 <body>
   <main>
-    <nav class="bg-red-200 flex items-center justify-between px-8 py-4">
+    <nav class="bg-white flex items-center justify-between px-8 py-2 border-b">
       <div class="flex space-x-3">
         <span><i class="fab fa-linkedin text-blue-600 fa-3x"></i></span>
         <div class="bg-gray-200 h-11 flex items-center p-4">
@@ -18,46 +19,108 @@
         </div>
       </div>
       <div>
-        <ul class="flex space-x-5">
-          <li>
-            <a href="#">
-              <span></span>
-              <p>Home</p>
+        <ul class="flex space-x-3">
+          <li class="p-3 h-26">
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center"><i class="fas fa-home text-2xl"></i></span>
+              <div class="h-8 flex items-end">
+                <p>Home</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-3 w-32">
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center"><i class="fas fa-users text-2xl"></i></span>
+              <div class="h-8 flex items-end justify-center">
+                <p>My Network</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-3 w-32">
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center">
+                <i class="fas fa-briefcase text-2xl"></i>
+              </span>
+              <div class="h-8 flex items-end justify-center">
+                <p>Jobs</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-3 w-32">
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center"><i class="fas fa-comment-dots text-2xl"></i></span>
+              <div class="h-8 flex items-end justify-center">
+                <p>Messaging</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-3">
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center"><i class="fas fa-bell text-2xl"></i></span>
+              <div class="h-8 flex items-end justify-center">
+                <p>Notifications</p>
+              </div>
             </a>
           </li>
           <li>
-            <a href="#">
-              <span></span>
-              <p>My Network</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <p>Jobs</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <p>Messaging</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span></span>
-              <p>Me</p>
+            <a href="#" class="flex flex-col justify-between">
+              <span class="flex justify-center rounded-full p-2">
+                <i class="fas fa-user-tie text-2xl"></i>
+              </span>
+              <div class="h-8 flex items-end justify-center">
+                <p>Me</p>
+              </div>
             </a>
           </li>
         </ul>
       </div>
     </nav>
+    <section class="bg-main h-full flex justify-center space-x-6 px-72 py-20">
+      <div class="bg-blue-400 w-72 h-auto space-y-3 p-2">
+        <div class="bg-white h-1/2 rounded-lg overflow-hidden border border-gray-400">
+          <!-- profile -->
+          <div class="h-40">
+            <div class="bg-gray-400 h-14"></div>
+            <div class="flex justify-center">
+              <span class="bg-white w-16 h-16 flex items-center justify-center rounded-full p-2 absolute -mt-9">
+                <i class="fas fa-user-tie text-4xl"></i>
+              </span>
+              <div class="mt-10 w-full text-center">
+                <h4 class="font-bold text-lg">John Doe</h4>
+                <p class="font-thin">Full stack developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- views -->
+          <div class="h-20 py-2 border-t border-b">
+            <div class="hover:bg-gray-200 flex justify-between p-1 px-3 cursor-pointer text-sm">
+              <p class="text-gray-500 font-bold">Who viewed your profile</p>
+              <span class="text-blue-500 font-bold">26</span>
+            </div>
+            <div class="hover:bg-gray-200 flex justify-between p-1 px-3 cursor-pointer text-sm">
+              <p class="text-gray-500 font-bold">Views of your post</p>
+              <span class="text-blue-500 font-bold">175</span>
+            </div>
+          </div>
+          <!-- promotion -->
+          <div class="h-20 p-1 border-b hover:bg-gray-200 cursor-pointer text-sm">
+            <p class="font-thin">Acces exclusive tools & insights</p>
+            <div class="flex">
+              <span class="h-5 w-4 text-center bg-yellow-400 text-yellow-400 rounded mr-1">a</span>
+              <p class="hover:text-blue-500 font-bold">Get Hired Faster, Try Premium Free</p>
+            </div>
+          </div>
+          <!-- my items -->
+          <div class="h-16 flex items-center px-3 hover:bg-gray-200 cursor-pointer text-sm">
+            <span class="h-5 w-4 text-center bg-gray-500 text-gray-500 rounded mr-1">a</span>
+              <p class="">My Items</p>
+          </div>
+        </div>
+        <div class="bg-red-300 h-1/2 rounded-lg">D2</div>
+      </div>
+      <div class="bg-blue-500 w-3/6">w-2</div>
+      <div class="bg-blue-600 w-2/6">w-3</div>
+    </section>
   </main>
 </body>
 </html>
